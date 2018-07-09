@@ -1,0 +1,161 @@
+<div class="main-content" >
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-8">
+                <div class="card">
+                    <div class="header">
+                        <h4 class="title">Enter Profile</h4>
+                    </div>
+                    <div class="content">
+                        <form>
+                            <div class="row">
+                                <div class="col-md-5">
+                                    <div class="form-group">
+                                        <label>Username</label>
+                                        <input id="naming" type="text" class="form-control" placeholder="Username" value="">
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="form-group">
+                                        <label for="exampleInputEmail1">Email address</label>
+                                        <input id="emailing" type="email" class="form-control" placeholder="Email">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label>Please Select One Below:</label>
+                                        <label class="container">Male
+                                          <input type="radio" name="radio" (click)="genCheck(0)">
+                                          <span class="checkmark"></span>
+                                        </label>
+                                        <label class="container">Female
+                                          <input type="radio" name="radio"  (click)="genCheck(1)">
+                                          <span class="checkmark"></span>
+                                        </label>
+                                        <label class="container">Neither
+                                          <input type="radio" name="radio"  (click)="genCheck(2)">
+                                          <span class="checkmark"></span>
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                      <label>Please Select Your Age Group:</label>
+                                      <label class="container1">17 or Under
+                                        <input type="radio" name="radio1" (click)="ageCheck(1)">
+                                        <span class="checkmark1"></span>
+                                      </label>
+                                      <label class="container1"> 18-50
+                                        <input type="radio" name="radio1" (click)="ageCheck(2)">
+                                        <span class="checkmark1"></span>
+                                      </label>
+                                      <label class="container1">51 or Older
+                                        <input type="radio" name="radio1" (click)="ageCheck(3)">
+                                        <span class="checkmark1"></span>
+                                      </label>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-md-12">
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-md-4">
+                                    <div class="form-group">
+                                        <label>City</label>
+                                        <input id = "addring1" type="text" class="form-control" placeholder="City" value="Orlando">
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="form-group">
+                                        <label>Country</label>
+                                        <input type="text" class="form-control" placeholder="Country" value="United States">
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="form-group">
+                                        <label>Postal Code</label>
+                                        <input id = "addring2" type="number" class="form-control" placeholder="ZIP Code">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <div class="form-group">
+                                        <label>How often do you feel
+                                            <div class="tooltip1">sick?
+                                                <span class="tooltiptext1">Feeling of being ill (physical, mental, emotional...)</span>
+                                            </div>
+                                        </label>
+                                          <div class="custom-select1" style="width:200px;">
+                                            <select>
+                                              <option value="0">Once Yearly</option>
+                                              <option value="1">Once Weekly</option>
+                                              <option value="2">Once Daily</option>
+                                              <option value="3">Never</option>
+                                            </select>
+                                          </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <label>How often do you feel
+                                              <div class="tooltip1"> sad?
+                                                  <span class="tooltiptext1">Feeling of sorrow; unhappy</span>
+                                              </div>
+                                            </label>
+                                              <div class="custom-select1" style="width:200px;">
+                                                <select id="sadH">
+                                                  <option (click) = "check1()" value="3.5">Few times Yearly</option>
+                                                  <option (click) = "check1()" value="6.5">Few times Weekly</option>
+                                                  <option (click) = "check1()" value="10">Few times Daily</option>
+                                                  <option (click) = "check1()" value="0">Never</option>
+                                                </select>
+                                              </div>
+                                            </div>
+                                            <div class="form-group">
+                                                <label>How many hours of sleep do you get a night?</label>
+                                                  <div class="custom-select1" style="width:200px;">
+                                                    <select id="sleepH">
+                                                      <option (click) = "check1()" value="3.5">0-4</option>
+                                                      <option (click) = "check1()" value="6.5">5-8</option>
+                                                      <option (click) = "check1()" value="8.5">>8</option>
+                                                    </select>
+                                                  </div>
+                                                </div>
+
+                                                <div class="form-group">
+                                                    <label>How many hours do you spend
+                                                      <div class="tooltip1">online?
+                                                          <span class="tooltiptext1">Dedicated time online, not googling answers or any mobile interations</span>
+                                                      </div>
+                                                    </label>
+                                                      <div class="custom-select1" style="width:200px;">
+                                                        <select id="onlineH">
+                                                          <option (click) = "check1()" value="3"> <3 </option>
+                                                          <option (click) = "check1()" value="5"> 4-6 </option>
+                                                          <option (click) = "check1()" value="8.5"> >7 </option>
+                                                        </select>
+                                                      </div>
+                                                    </div>
+                                    <div class="form-group">
+                                        <label>About Me</label>
+                                        <textarea rows="5" class="form-control" placeholder="Here can be your description" value="Mike">Lamborghini Mercy, Your chick she so thirsty, I'm in that two seat Lambo.</textarea>
+                                    </div>
+                                </div>
+                            </div>
+                            <button type="submit" class="btn btn-info btn-fill pull-right" (click) = "addButton()">Submit</button>
+                              <p id="demo"></p>
+
+                            <div class="clearfix"></div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
